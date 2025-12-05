@@ -1,13 +1,7 @@
-# CS-PROJECT-Q2
+#CS_PROJECT_Q2
 Carnation Group 3: Credo, Barrientos, Illustrisimo
 
-Code:
-
-# -------------------------------
-# Simple PyBudget Program
-# -------------------------------
-
-transactions = []  
+transactions = []
 savings_goal = None
 
 def add_transaction():
@@ -34,7 +28,7 @@ def view_transactions():
     if not transactions:
         print("No transactions yet.")
         return
-    
+
     for i, t in enumerate(transactions, start=1):
         print(f"{i}. {t['type'].title()} - ₱{t['amount']} ({t['category']})")
 
@@ -100,5 +94,4 @@ def menu():
         else:
             print("Invalid choice, try again.")
 
-# start program
 menu()
